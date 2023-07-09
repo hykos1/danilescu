@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+header {
+  font-family: fantasy;
+  background: linear-gradient(
+    to right,
+    rgb(6, 89, 155),
+    #fff,
+    rgb(226, 44, 33)
+  );
+  height: 20vh;
+}
+
+.content-items img {
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.lista {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header li {
+  position: relative;
+  display: inline-block;
+  margin-left: 100px;
+  padding-top: 23px;
+}
+
+header li a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.avatar {
+  width: 100px;
+  height: auto;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav a:hover {
+  color: crimson;
+}
+
+nav a::before {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: black;
+  top: 0;
+  transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.left {
+  float: left;
+  width: 50%;
+  text-align: right;
+  padding-right: 50px;
+  padding-left: 90px;
+  box-sizing: border-box;
+}
+
+.right {
+  float: right;
+  width: 50%;
+  text-align: left;
+  padding-left: 50px;
+  padding-right: 90px;
+  box-sizing: border-box;
+}
+
+.left p,
+.right p {
+  font-size: 25px;
+  line-height: 1.5;
+  width: 300px;
+}
+
+main {
+  background-image: url(fundal.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: black;
+}
+
+main p {
+  text-align: left;
+}
+
+main img {
+  border-radius: 20%;
+}
+
+footer {
+  background-color: #cfcdcd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+footer img {
+  width: 400px;
+  height: auto;
+}
+
+.scris {
+  float: right;
+  padding-left: 400px;
+  padding-top: 40px;
+}
+
+footer ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+
+footer ul li {
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.copyright {
+  background-color: #015e9a;
+  margin-top: 0;
+  width: 100%;
+  height: 20px;
+  color: white;
+  text-align: center;
+}
